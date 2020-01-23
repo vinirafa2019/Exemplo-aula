@@ -1,0 +1,16 @@
+.btn{
+	margin-left: 16px;
+    margin-top: 15px;
+}
+.col-sm-1{
+    width: 6%;
+}
+.col-sm-2{
+	width: 0;
+}
+.col-sm-3{
+	width: 20%;
+}
+.col-sm-4{
+	width: 0;
+}
