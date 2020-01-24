@@ -15,8 +15,10 @@ import javax.persistence.TemporalType;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.format.annotation.NumberFormat;
 
+import com.sun.istack.NotNull;
+
 @Entity
-public class Titulo {
+public class Portifolio { 
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -24,12 +26,18 @@ public class Titulo {
 
 	private String descricao;
 	@DateTimeFormat(pattern = "dd/MM/yyyy")
+	
 	@Temporal(TemporalType.DATE)
 	private Date dataVencimento;
+	
+	
+	@NotNull
 	@NumberFormat(pattern = "#,###.00")
 	private BigDecimal valor;
+	
+	
 	@Enumerated(EnumType.STRING)
-	private StatusTitulo status;
+	private StatusPortifolio status;
 
 	public long getCodigo() {
 		return codigo;
@@ -63,11 +71,11 @@ public class Titulo {
 		this.valor = valor;
 	}
 
-	public StatusTitulo getStatus() {
+	public StatusPortifolio getStatus() {
 		return status;
 	}
 
-	public void setStatus(StatusTitulo status) {
+	public void setStatus(StatusPortifolio status) {
 		this.status = status;
 	}
 
@@ -87,7 +95,7 @@ public class Titulo {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		Titulo other = (Titulo) obj;
+		Portifolio other = (Portifolio) obj;
 		if (codigo != other.codigo)
 			return false;
 		return true;

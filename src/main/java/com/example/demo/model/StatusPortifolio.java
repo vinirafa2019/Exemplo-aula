@@ -1,12 +1,12 @@
 package com.example.demo.model;
 
-public enum StatusTitulo {
+public enum StatusPortifolio {
 
 	PENDENTE("Pendente"), RECEBIDO("Recebido");
 
 	private String descricao;
 
-	StatusTitulo(String descricao) {
+	StatusPortifolio(String descricao) {
 
 		this.descricao = descricao;
 

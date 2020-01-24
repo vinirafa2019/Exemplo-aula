@@ -14,3 +14,29 @@
 .col-sm-4{
 	width: 0;
 }
+.aw-link-card{
+	float: right;
+	padding:0px;
+	
+}
+aw-titulo-card{
+	float :left;
+}
+.card-title {
+    margin-bottom: -3.25rem;
+}
+.card{
+    margin-left: 40px;
+	margin-right: 1300px;
+	margin-top: 30px;
+}   
+.imgpanel{
+	width: 50px;
+}
+
+.nav-link{
+	color: black;
+}
+
+
+
