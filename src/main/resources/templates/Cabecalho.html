@@ -3,27 +3,25 @@
 	xmlns:th="http://www.thymeleaf.org" lang="en"
 	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 
-<nav class="navbar navbar-expand-md bg-primary" style="background-color:#0979e8;text-align: left;">
+<nav class="navbar  navbar-expand-lg navbar-dark bg-dark">
   
 	<a class="navbar-brand" href="#"></a> <img class="imgpanel"alt="AlgaWorks"
-		src="/img/download.png"><h1 class="text-center">Portifolio</h1>
+		src="/img/download.png">
 	<div class="collapse navbar-collapse" id="collapsibleNavbar"></div>	
 		<ul class="navbar-nav mr-auto">
       <li class="nav-item active">
         <a class="nav-link" href="/home">Home <span class="sr-only"></span></a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/home/projetos">Projetos
-		</a>
-      </li>
-            <li class="nav-item">
-        <a class="nav-link" href="/home/skills">Skills
-		</a>
-      </li>
-            <li class="nav-item">
-        <a class="nav-link" href="/home/contatos">Contato
-		</a>
-      </li>
+            <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Menu
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="/home/projetos">Projetos</a>
+          <a class="dropdown-item" href="/home/skills">Skills</a>
+          <a class="dropdown-item" href="/home/contatos">Contato</a>
+        </div>
     </ul>
 </nav>
+
 </html>

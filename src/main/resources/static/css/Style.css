@@ -1,3 +1,13 @@
+.body{
+	background-image: url(/img/porti.jpg);
+	background-attachment:scroll;
+	background-repeat: no-repeat;
+	background-image-size:100%;
+}
+
+
+
+
 .btn{
 	margin-left: 16px;
     margin-top: 15px;
@@ -38,5 +48,22 @@ aw-titulo-card{
 	color: black;
 }
 
-
-
+.foto{
+    height: 280px;
+    width: 352px;
+    max-width: 100%;
+    border-radius: 262%;	
+}
+.imglogos {
+    width: 85px;
+}
+.center{
+	    text-align: center;
+}
+.footer{
+	position:fixed;
+	left: 0;
+	bottom:0;
+	width:100%;
+	background: #343a40;
+}
